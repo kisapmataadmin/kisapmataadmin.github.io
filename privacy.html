@@ -103,7 +103,7 @@
     <p>Your eye-health answers and the measurements taken before your examination are seen by the clinic staff treating you. The record shows who entered each answer and when, and earlier answers are kept when they change. You can see and update your own answers in your portal.</p>
     <p>We use these service providers to run the app:</p>
     <ul>
-      <li>Supabase: stores the database, sign-in accounts and scan images (region: <span class="todo">[Supabase project region]</span>).</li>
+      <li>Supabase: stores the database, sign-in accounts and scan images (region: Singapore, AWS ap-southeast-1).</li>
       <li>Google (Gmail): sends account emails (a temporary password and a 6-digit verification code), appointment confirmations and reminders.</li>
       <li>Hugging Face: runs our server and the screening model. Your eye photographs and the details sent with each scan pass through that server to be analysed. It saves them to Supabase and does not keep its own copy.</li>
       <li>Vercel: hosts the web version of Kisapmata. It receives your IP address and browser details when you open the site, as any website host does. No patient records are stored there.</li>
