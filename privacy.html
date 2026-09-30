@@ -105,9 +105,11 @@
     <ul>
       <li>Supabase: stores the database, sign-in accounts and scan images (region: <span class="todo">[Supabase project region]</span>).</li>
       <li>Google (Gmail): sends account emails (a temporary password and a 6-digit verification code), appointment confirmations and reminders.</li>
-      <li>Hugging Face: supplies the screening model to our server. No patient data is sent to Hugging Face.</li>
+      <li>Hugging Face: runs our server and the screening model. Your eye photographs and the details sent with each scan pass through that server to be analysed. It saves them to Supabase and does not keep its own copy.</li>
+      <li>Vercel: hosts the web version of Kisapmata. It receives your IP address and browser details when you open the site, as any website host does. No patient records are stored there.</li>
       <li>On the web version, your browser downloads part of the app's display engine from Google's servers (gstatic.com), and sometimes a font for characters the app's own fonts do not include. This shares your IP address with Google.</li>
     </ul>
+    <p>These providers' servers are outside the Philippines, so your data is transferred abroad to them. Each receives only what it needs for its task, and every connection to them is encrypted.</p>
     <p>We do not sell your data or share it with anyone else unless the law requires it.</p>
   </section>
 
@@ -154,7 +156,7 @@
     <p>If this notice changes, the date below changes and the app will show the new version.</p>
   </section>
 
-  <p class="updated">Last updated: 28 September 2026</p>
+  <p class="updated">Last updated: 30 September 2026</p>
 </main>
 
 <footer>
